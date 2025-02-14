@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Онлайн редактор HTML 5</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/theme/dracula.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/theme/eclipse.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body class="dark-theme">
+  <header class="animate__animated animate__fadeInDown">
+    <h1>Онлайн редактор HTML 5</h1>
+    <div class="controls">
+      <div class="language-switcher">
+        <button id="lang-ru">Русский</button>
+        <button id="lang-en">English</button>
+      </div>
+      <button id="save-btn">Сохранить код</button>
+      <button id="theme-toggle">Светлая тема</button>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="editor-container">
+      <textarea id="html-editor" placeholder="Введите ваш HTML код..."></textarea>
+    </div>
+    <div class="preview-container">
+      <iframe id="preview"></iframe>
+    </div>
+  </div>
+
+  <footer class="animate__animated animate__fadeInUp">
+    <p id="footer-text">Загороднов Иван 2025 </p>
+    <p id="footer-text">Сайт создан в рамках проекта <a href="https://ваш-сайт-школы.рф" target="_blank">МАОУ СМТЛ</a>.</p>
+    <p id="footer-contact">По вопросам и предложениям пишите на <a href="mailto:zaivig2011@gmail.com">zaivig2011@gmail.com</a>.</p>
+    <p id="footer-love">Создано с ❤️ для разработчиков</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/mode/htmlmixed/htmlmixed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/mode/xml/xml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/mode/javascript/javascript.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.0/mode/css/css.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
